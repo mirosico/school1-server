@@ -1,10 +1,10 @@
-import { Entity, Column, ManyToOne, PrimaryColumn } from 'typeorm';
+import { Entity, Column, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Teacher } from '../teachers/teachers.entity';
 import { Group } from '../groups/groups.entity';
 
 @Entity()
 export class Lesson {
-  @PrimaryColumn()
+  @PrimaryGeneratedColumn()
   id: string;
 
   @Column('jsonb')

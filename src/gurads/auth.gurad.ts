@@ -6,7 +6,6 @@ export class AuthGurad implements CanActivate {
     context: ExecutionContext,
   ): boolean | Promise<boolean> | Observable<boolean> {
     const request = context.switchToHttp().getRequest();
-    console.log('request.session.userId', request.session);
     return request.session.userId;
   }
 }

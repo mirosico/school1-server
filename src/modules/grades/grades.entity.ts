@@ -9,5 +9,5 @@ export class Grade {
   userId: number;
 
   @Column('varchar', { length: 3 })
-  grade: Grade;
+  grade: string;
 }
